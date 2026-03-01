@@ -23,4 +23,5 @@ static func convert_and_save(json_data: Dictionary, file_path: String) -> Error:
 
     file.store_string("\n".join(csv_lines))
     file.close()
+    EditorInterface.get_resource_filesystem().scan()
     return OK
