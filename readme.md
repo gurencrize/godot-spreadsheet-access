@@ -15,5 +15,6 @@ godot engineからgoogle spread sheetを参照するためのアドオン
 ![](readme_img/image3.jpg)
 9. `addons/spreadsheet_to_csv/import_from_spreadsheet.gd`の`spreadsheet_id`に参照したいスプレッドシートのIDを入れ、rangeに参照したい範囲を入れる  
 IDはここの値↓  
-![](readme_img/image2.jpg)
+![](readme_img/image2.jpg)  
+※先頭以外のシートのデータを取得したい場合、rangeでシートも指定する 例:`range = "'シート2'!A1:A1000"`
 10. godotの`プロジェクト>ツール>スプレッドシートからデータをインポート`を押すと`addons/spreadsheet_to_csv/output.txt`に9.で指定したシートのデータが出力される
