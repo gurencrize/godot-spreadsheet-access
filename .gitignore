@@ -1,0 +1,7 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+*.uid
+addons/spreadsheet_to_csv/access_token.json
+addons/spreadsheet_to_csv/jwt.txt
+addons/spreadsheet_to_csv/secret.json
