@@ -19,7 +19,7 @@ static func request_access_token(http:HTTPRequest, jwt: String):
     if json.has("access_token") == false:
         return
     var content:Dictionary = {
-        "expire_date": Time.get_unix_time_from_system() + 1000 * 60 * 59, # 安全マージン1分取るよ！
+        "expire_date": Time.get_unix_time_from_system() + 60 * 59, # 安全マージン1分取るよ！
         "access_token": json["access_token"]
     }
     var file = FileAccess.open(token_file_path,FileAccess.WRITE_READ)
